@@ -6,9 +6,13 @@
 
   <groupId>com.ratz</groupId>
   <artifactId>ratzservices</artifactId>
-  <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>customer</module>
+    </modules>
 
-  <name>ratzservices</name>
+    <name>ratzservices</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 

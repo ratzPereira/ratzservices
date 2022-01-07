@@ -2,14 +2,16 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ratzservices" />
+        <module name="customer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="customer" target="1.7" />
       <module name="ratzservices" target="1.7" />
     </bytecodeTargetLevel>
   </component>
