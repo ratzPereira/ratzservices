@@ -1,7 +1,8 @@
 package com.ratz.customer.service;
 
-import org.springframework.stereotype.Service;
+import com.ratz.customer.entity.Customer;
 
-@Service
-public class CustomerService {
+
+public interface CustomerService {
+  Customer save(Customer customer);
 }
