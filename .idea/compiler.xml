@@ -13,8 +13,8 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="customer" target="1.7" />
-      <module name="fraud" target="1.7" />
-      <module name="ratzservices" target="1.7" />
+      <module name="fraud" target="11" />
+      <module name="ratzservices" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
