@@ -3,10 +3,12 @@ package com.ratz.fraud.controller;
 
 import com.ratz.fraud.entity.FraudCheckResponse;
 import com.ratz.fraud.service.FraudService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("api/v1/fraud-check")
+@Slf4j
 public class FraudController {
 
   private final FraudService fraudService;
@@ -22,6 +24,8 @@ public class FraudController {
 
     FraudCheckResponse fraudCheckResponse = new FraudCheckResponse();
     fraudCheckResponse.setFraudulent(fraudulentCustomer);
+
+    log.info("fraud check request for customer id = {}", id);
 
     return fraudCheckResponse;
   }
