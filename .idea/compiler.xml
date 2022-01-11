@@ -8,11 +8,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="customer" />
+        <module name="eureka-server" />
         <module name="fraud" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="customer" target="1.7" />
+      <module name="eureka-server" target="11" />
       <module name="fraud" target="11" />
       <module name="ratzservices" target="11" />
     </bytecodeTargetLevel>
