@@ -23,7 +23,7 @@ public class CustomerServiceImpl implements CustomerService {
 
      repository.saveAndFlush(customer);
 
-    FraudCheckResponse object = restTemplate.getForObject("http://localhost:8081/api/v1/fraud-check/{customerId}",
+    FraudCheckResponse object = restTemplate.getForObject("http://FRAUD/api/v1/fraud-check/{customerId}",
         FraudCheckResponse.class,
         customer.getId()
     );
