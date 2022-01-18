@@ -1,3 +1,6 @@
+server:
+  port: 8083
+
 spring:
   application:
     name: api-gateway
@@ -8,20 +11,8 @@ spring:
       routes:
         - id: customer
           uri: lb://CUSTOMER
-          perdicates:
+          predicates:
             - Path=/api/v1/customers/**
-        - id: customer
-          uri: lb://FRAUD
-          perdicates:
-            - Path=/api/v1/fraud-check/**
-        - id: customer
-          uri: lb://NOTIFICATION
-          perdicates:
-            - Path=/api/v1/notification/**
-
-
-server:
-  port: 8083
 
 eureka:
   client:
