@@ -15,7 +15,8 @@
     <module>eureka-server</module>
     <module>clients</module>
     <module>notification</module>
-      <module>api-gateway</module>
+    <module>api-gateway</module>
+    <module>adv-message-queue</module>
   </modules>
 
   <name>ratzservices</name>
